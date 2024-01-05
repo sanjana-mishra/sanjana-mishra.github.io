@@ -1,0 +1,33 @@
+#about-me-text {
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    padding: 10em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    margin-bottom: 0px;
+}
+
+#about-me-text img{
+    display: flex;
+    border-radius: 10%;
+    max-width: 20em;
+    max-height: 20em;
+    margin-right: 5em;
+    border: 10px solid rgb(255, 255, 255);
+    
+}
+#content h2{
+    margin-bottom: 2vh;
+    font-size: 3vh;
+
+}
+#content p{
+    margin-bottom: 1vh;
+    font-size: 2vh;
+
+}
+
+#about-me-text #socials{
+    display: none;
+
+}

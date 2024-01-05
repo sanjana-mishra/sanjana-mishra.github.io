@@ -1,0 +1,35 @@
+/* Skills.css */
+#skills {
+    /* margin-top: 2em; */
+    background-color: rgb(40, 40, 40);
+    padding: 1em;
+    color: white;
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1em;
+    margin: 4em;
+    /* margin-left: 5em; */
+    /* padding: 1rem 2em; */
+  }
+  
+  .skills-box {
+    width: auto;
+    height: auto;
+
+  }
+
+  .skills-box img {
+    width: 40%;
+    height: 40%;
+    object-fit: fill;
+ } 
+
+  
+  
