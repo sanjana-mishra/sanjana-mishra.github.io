@@ -8,21 +8,25 @@ import p3 from './images/p3.jpeg';
 import p4 from './images/p4.jpeg';
 import p5 from './images/p5.jpeg';
 import p6 from './images/p6.jpeg';
+import p1_2 from './images/p1_2.png';
 
 const projectsData = [
   {
     title: 'Edge-aware Point Cloud Upsampling',
     date: '01/2023 - 04/2023',
     description:
-      'Developed a CNN that takes in a low resolution point cloud as an input and produces a high resolution point cloud whilst being mindful of the edges using PyTorch, COLMAP and PointNet++ point cloud model. Devised a novel Loss Function, Magnetic Loss, which performs a “pulling” action on the points towards the edges based on distance. Trained and tested on S3DIS dataset with results at par with (some surpassing) state-of-the-art upsampling models.',
+    "In the realm of artificial intelligence, I engineered a convolutional neural network (CNN) using advanced technologies such as PyTorch, COLMAP, and PointNet++. This architecture upscales low-resolution point clouds to detailed high-resolution counterparts while preserving details along the edges. A key innovation is the Magnetic Loss Function—a strategic algorithm designed to 'pull' points towards the edges, ensuring the retention of crucial details. Rigorously evaluated on the S3DIS dataset, the results surpassed the benchmark set by PUNet by an impressive 20%, validating the efficacy of this approach. Explore the intricacies of this technological feat, where precision and innovation converge.",
     image: p1,
+    github: "https://github.com/sanjana-mishra/pointcloud-upsampling",
+    image2: p1_2,
   },
   {
     title: 'Data Synthesis and Extraction using Nvidia Omniverse',
     date: '10/2022 - 12/2022',
     description:
       'Simulated a digital twin of an outdoor farmstead using UE5, Omniverse to generate trainable data and used this synthetic dataset to train a YOLOv5 network for object detection. Analyzed the training results to conclude that the dataset must contain both synthetic and real-world data for best detection results and to avoid overfitting of the model to synthetic data.',
-      image: p2,
+    image: p2,
+    github: "https://github.com/sanjana-mishra/synthetic-visual-dataset-generation"
   },
   {
     title: 'Middle School Architect',
@@ -30,6 +34,8 @@ const projectsData = [
     description:
       'Developed a platform in Elm for the construction of buildings to teach young students about coding and math concepts of 3D geometry through computer graphics, visual programming, and high-level math. Collaborated with McMaster University faculty to contribute to the university\'s outreach program through Middle School Architect resulting in an improvement of programming skills for a significant number of students.',
       image: p3,
+      github: "https://github.com/sanjana-mishra/clt-creator",
+      link2: "https://cltcreator.netlify.app/"
   },
   {
     title: 'COVID‑SCAPE: Crowd Detection using IoT',
@@ -37,6 +43,7 @@ const projectsData = [
     description:
       'Developed a real-time crowd detection system using Computer Vision (Python, NumPy, OpenCV, Haar Cascade Features) and IoT for identifying overcrowded areas. Documented high accuracy in people counting across scenes (image and video), validating the system\'s effectiveness.',
       image: p4,
+      github: "https://github.com/sanjana-mishra/FlaskSurveillance"
   },
   {
     title: 'Cosmoteem',
@@ -44,6 +51,8 @@ const projectsData = [
     description:
       'Developed an astronomy website using Handlebars, Express.JS, JavaScript, CSS3, HTML5, MongoDB, and Unity3D, featuring modules like a forum, news feed, store, gallery, and a Solar System view. Executed front-end development for the website resulting in a 20% increase in user engagement and interaction.',
       image: p5,
+      link2: 'https://www.cosmoteem.xyz',
+
   },
   {
     title: 'Implementing Security in IoT systems via Blockchain (Publication)',
@@ -96,8 +105,20 @@ const Projects = () => {
               &times;
             </span>
             <h2>{projectsData[selectedProject].title}</h2>
-            <p>{projectsData[selectedProject].date}</p>
+            {/* <p>{projectsData[selectedProject].date}</p> */}
             <p>{projectsData[selectedProject].description}</p>
+            <img
+              src={projectsData[selectedProject].image2}
+              className="project-image2"
+            />
+            {projectsData[selectedProject].github && (
+            <a href={projectsData[selectedProject].github} target="_blank" rel="noopener noreferrer">
+              View this project on GitHub 
+            </a>
+          )}
+            {projectsData[selectedProject].link2 && (
+              <a href={projectsData[selectedProject].link}>Visit the Website</a>
+            )}
             {projectsData[selectedProject].link && (
               <a href={projectsData[selectedProject].link}>Read more</a>
             )}
