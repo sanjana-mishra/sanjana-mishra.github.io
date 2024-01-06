@@ -9,7 +9,7 @@
 }
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -30,6 +30,10 @@
     height: 40%;
     object-fit: fill;
  } 
+
+ .skills-box p {
+  font-size: 2vh;
+} 
 
   
   

@@ -12,6 +12,8 @@ import jsHtmlCssIcon from './jsHtmlCssIcon.png';
 import nodeJsIcon from './nodeJsIcon.png'; 
 import pytorchIcon from './pytorchIcon.png'; 
 import opencvIcon from './opencvIcon.png'; 
+import unityIcon from './unityIcon.png'; 
+import ueIcon from './ueIcon.png'; 
 
 
 
@@ -39,10 +41,10 @@ const Skills = () => {
 
   return (
     <div id="skills">
-      <h1>My Skills</h1>
+      <h1 style={{ fontSize: '3vh' }}>My Skills</h1>
       <div className="skills-container">
         <div className="skills-box">
-          <img src={machineLearningIcon} alt="Machine Learning" />
+          <img src={machineLearningIcon} alt="Machine Learning" style={{ filter: 'invert(85%)' }}/>
           <p>Machine Learning</p>
         </div>
         <div className="skills-box">
@@ -74,12 +76,20 @@ const Skills = () => {
           <p>Node.js</p>
         </div>
         <div className="skills-box">
-          <img src={cppIcon} alt="C++" />
+          <img src={cppIcon} alt="C++" style={{ filter: 'invert(70%)' }}/>
           <p>C++</p>
         </div>
         <div className="skills-box">
           <img src={cIcon} alt="C" />
           <p>C</p>
+        </div>
+        <div className="skills-box">
+          <img src={unityIcon} alt="Unity3D" />
+          <p>Unity</p>
+        </div>
+        <div className="skills-box">
+          <img src={ueIcon} alt="Unreal Engine" style={{ filter: 'invert(80%)' }}/>
+          <p>Unreal Engine</p>
         </div>
 
         {/* Add more skills as needed */}

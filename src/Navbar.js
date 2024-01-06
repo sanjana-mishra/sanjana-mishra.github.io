@@ -1,11 +1,32 @@
 // Navbar.js
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [navbarBackground, setNavbarBackground] = useState('transparent');
+
+  const handleScroll = () => {
+    const headerSection = document.getElementById('home');
+    const { top, height } = headerSection.getBoundingClientRect();
+    const headerBottom = top + height;
+  
+    if (window.scrollY >= headerBottom) {
+      setNavbarBackground('rgb(82, 152, 141)');
+    } else {
+      setNavbarBackground('transparent');
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={{ backgroundColor: navbarBackground }}>
       <div className="navbar-container">
         <div className="navbar-logo">
           Sanjana Mishra

@@ -78,7 +78,7 @@ const Projects = () => {
 
   return (
     <div id="projects">
-      <h1>My Projects</h1>
+<     h1 style={{ fontSize: '3vh' }}>My Projects</h1>
       <div className="projects-container">
         {projectsData.map((project, index) => (
           <div
@@ -117,10 +117,10 @@ const Projects = () => {
             </a>
           )}
             {projectsData[selectedProject].link2 && (
-              <a href={projectsData[selectedProject].link}>Visit the Website</a>
+              <a href={projectsData[selectedProject].link2}target="_blank" rel="noopener noreferrer">Visit the Website</a>
             )}
             {projectsData[selectedProject].link && (
-              <a href={projectsData[selectedProject].link}>Read more</a>
+              <a href={projectsData[selectedProject].link}target="_blank" rel="noopener noreferrer">Read more</a>
             )}
           </div>
         </div>

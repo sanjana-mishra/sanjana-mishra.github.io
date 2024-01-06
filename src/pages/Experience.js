@@ -43,7 +43,7 @@ const Experience = () => {
 
   return (
     <div id = "exp">
-      <h1>My Experience</h1>
+      <h1 style={{ fontSize: '3vh' }}>My Experience</h1>
       <div>
         <ul className="timeline">
           <li>

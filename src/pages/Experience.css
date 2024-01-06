@@ -81,7 +81,10 @@ time {
   transition: all 0.5s ease-in-out;
 
 }
+.timeline li div p{
+  font-size: 1.75vh;
 
+}
 .timeline li:nth-child(odd) div {
   transform: translate3d(10em, 0, 0); /* Adjust as needed */
 }
