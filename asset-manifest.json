@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.701979eb.css",
-    "main.js": "/static/js/main.5bd7a6aa.js",
+    "main.css": "/static/css/main.dbe0cac7.css",
+    "main.js": "/static/js/main.6b301c66.js",
     "static/js/787.2dcca737.chunk.js": "/static/js/787.2dcca737.chunk.js",
     "static/media/sanjana-image-alt.jpeg": "/static/media/sanjana-image-alt.89270185508083f98781.jpeg",
     "static/media/p1_2.png": "/static/media/p1_2.baf2c2b06789dedc1b2d.png",
@@ -10,21 +10,23 @@
     "static/media/p4.jpeg": "/static/media/p4.ca177f81f501fe38926b.jpeg",
     "static/media/p1.jpeg": "/static/media/p1.6e927f1316a2efe46e66.jpeg",
     "static/media/p5.jpeg": "/static/media/p5.1d8107e2a87fc56c767b.jpeg",
+    "static/media/unityIcon.png": "/static/media/unityIcon.bc7fd671814e44cf1e6a.png",
     "static/media/cIcon.png": "/static/media/cIcon.d083731589e745941c43.png",
     "static/media/p6.jpeg": "/static/media/p6.f67123cf5c780c1268a8.jpeg",
     "static/media/opencvIcon.png": "/static/media/opencvIcon.d86ed828fca79699428f.png",
     "static/media/jsHtmlCssIcon.png": "/static/media/jsHtmlCssIcon.e8ca518d7f9641cddab9.png",
     "static/media/computerVisionIcon.png": "/static/media/computerVisionIcon.1a07c05e1e0656cc6c6a.png",
+    "static/media/ueIcon.png": "/static/media/ueIcon.bdfa760d3a4d88b9a4ee.png",
     "static/media/pythonIcon.png": "/static/media/pythonIcon.f7f12e1bf59e577656a2.png",
     "static/media/meraki_logo.jpeg": "/static/media/meraki_logo.be899adf93dd7375d035.jpeg",
     "static/media/hypothetic_logo.jpeg": "/static/media/hypothetic_logo.4ce3d7a3e3890f5ea523.jpeg",
     "index.html": "/index.html",
-    "main.701979eb.css.map": "/static/css/main.701979eb.css.map",
-    "main.5bd7a6aa.js.map": "/static/js/main.5bd7a6aa.js.map",
+    "main.dbe0cac7.css.map": "/static/css/main.dbe0cac7.css.map",
+    "main.6b301c66.js.map": "/static/js/main.6b301c66.js.map",
     "787.2dcca737.chunk.js.map": "/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.701979eb.css",
-    "static/js/main.5bd7a6aa.js"
+    "static/css/main.dbe0cac7.css",
+    "static/js/main.6b301c66.js"
   ]
 }
